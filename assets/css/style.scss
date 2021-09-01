@@ -6,7 +6,14 @@ display: none;
 
 }
 
-img[src*='#center'] { 
+img[alt$="><"] {
     display: block;
+    max-width: 100%;
+    height: auto;
     margin: auto;
-}
+    float: none!important;
+  }
+
+.page__content {
+    text-align: justify;
+  }
