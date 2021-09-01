@@ -8,15 +8,15 @@ OpenCV (Open Source Computer Vision Library) es una librería de código abierto
 ### Usos de OpenCV
 
 ### Links de utilidad
-- Página principal: https://opencv.org
+- Página principal: <https://opencv.org>
 
--  Repositorio en Github: https://github.com/opencv/opencv
+-  Repositorio en Github: <https://github.com/opencv/opencv>
 
-- Documentación: https://docs.opencv.org/master/
+- Documentación: <https://docs.opencv.org/master/>
 
-- Foro Q&A: https://forum.opencv.org
+- Foro Q&A: <https://forum.opencv.org>
 
-- Repositorio con funcionalidades extra: https://github.com/opencv/opencv_contrib
+- Repositorio con funcionalidades extra: <https://github.com/opencv/opencv_contrib>
 
 ## Proceso de instalación
 
@@ -26,7 +26,7 @@ Antes de comenzar a hablar de procesamiento de imágenes, debemos saber exactame
 
 De cualquier forma, mientras nosotros (los humanos) vemos una representación gráfica, los dispositivos que capturan la imagen la almacenan como una gran matriz de dos dimensiones, formada por valores numéricos que representan cada uno de los puntos que se encuentran en ella. Dichos elementos son llamados *Picture Elements*, *Image Elements*, o simplemente *Pixels*.
 
-![Matrix_imagen](https://docs.opencv.org/master/MatBasicImageForComputer.jpg)
+![Matrix_imagen](https://docs.opencv.org/master/MatBasicImageForComputer.jpg#center)
 
 Por ejemplo, en la imagen de arriba, se puede ver que el espejo del auto no es más que una matriz conteniendo el nivel de intensidad de cada pixel. 
 
@@ -41,9 +41,9 @@ Por ejemplo, en la imagen de arriba, se puede ver que el espejo del auto no es m
 <script src="https://gist.github.com/camvives/b9cda75cbd3b855771c7be2c65a356af.js"></script>
 
 ## Recursos Adicionales
-- Canal de Youtube  de  Murtaza's Workshop - Robotics and AI: https://www.youtube.com/c/MurtazasWorkshopRoboticsandAI
+- Canal de Youtube  de  Murtaza's Workshop - Robotics and AI: <https://www.youtube.com/c/MurtazasWorkshopRoboticsandAI>
 
 ## Referencias
-- OpenCV - About: https://opencv.org/about/
-- Mat - The Basic Image Container: https://docs.opencv.org/master/d6/d6d/tutorial_mat_the_basic_image_container.html
-- How do digital images work?: https://www.bbc.co.uk/bitesize/topics/zf2f9j6/articles/z2tgr82
+- OpenCV - About: <https://opencv.org/about/>
+- Mat - The Basic Image Container: <https://docs.opencv.org/master/d6/d6d/tutorial_mat_the_basic_image_container.html>
+- How do digital images work?: <https://www.bbc.co.uk/bitesize/topics/zf2f9j6/articles/z2tgr82>
