@@ -29,7 +29,7 @@ De cualquier forma, mientras nosotros (los humanos) vemos una representación gr
 
 ![image alt ><](https://docs.opencv.org/master/MatBasicImageForComputer.jpg#center)
 
-Por ejemplo, en la imagen de arriba, se puede ver que el espejo del auto no es más que una matriz conteniendo el nivel de intensidad de cada pixel. 
+Por ejemplo, en la imagen de arriba, se puede ver que el espejo del auto no es más que una matriz que contiene el nivel de intensidad de cada pixel. 
 
 ### Almacenamiento de Pixels
 

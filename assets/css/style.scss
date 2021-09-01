@@ -1,10 +1,8 @@
 @import "{{ site.theme }}";
 
-header {
-
-display: none;
-
-}
+body{
+    text-align: justify;
+  }
 
 img[alt$="><"] {
     display: block;
@@ -14,6 +12,11 @@ img[alt$="><"] {
     float: none!important;
   }
 
-.page__content {
-    text-align: justify;
-  }
+
+
+header {
+
+display: none;
+
+};
+
