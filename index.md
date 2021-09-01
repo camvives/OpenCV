@@ -26,13 +26,14 @@ Antes de comenzar a hablar de procesamiento de imágenes, debemos saber exactame
 
 De cualquier forma, mientras nosotros (los humanos) vemos una representación gráfica, los dispositivos que capturan la imagen la almacenan como una gran matriz de dos dimensiones, formada por valores numéricos que representan cada uno de los puntos que se encuentran en ella. Los elementos que conforman la matriz son llamados *Picture Elements*, *Image Elements*, o simplemente *Pixels*.
 
+![><](https://docs.opencv.org/master/MatBasicImageForComputer.jpg#center,)
 
-![><](https://docs.opencv.org/master/MatBasicImageForComputer.jpg#center)
+*Fuente de la imagen: https://docs.opencv.org/*
 
-Por ejemplo, en la imagen de arriba, se puede ver que el espejo del auto no es más que una matriz que contiene el nivel de intensidad de cada pixel. 
+A modo de ejemplo, en la imagen de arriba, se puede ver que el espejo del auto no es más que una matriz que contiene el nivel de intensidad de cada pixel. 
 
 ### Almacenamiento de Pixels
-
+La forma de almacenar los pixels varía según las necesidades del problema que se quiera resolver. 
 
 ## Ejemplos 
 ### Ejemplo 1 - ¿Dónde está Wally?
