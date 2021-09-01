@@ -22,12 +22,12 @@ OpenCV (Open Source Computer Vision Library) es una librería de código abierto
 
 ## Procesamiento de imágenes
 ### ¿Qué es una imagen digital?
-Antes de comenzar a hablar de procesamiento de imágenes, debemos saber exactamente qué es una imagen digital. Existen múltiples formas de obtener imágenes digitales: sacando una foto con un smartphone, creándola con alguna herramienta de software, escaneándola, o bien, obteniéndolas a través de procesos más complejos como lo pueden ser las tomografías computadas o resonancias magnéticas. 
+Antes de comenzar a hablar de procesamiento de imágenes, debemos saber exactamente qué es una imagen digital. Existen múltiples formas de obtener imágenes digitales: sacando una foto con un smartphone, creándola con alguna herramienta de software, escaneándola, o bien, a través de procesos más complejos como lo pueden ser las tomografías computadas o las resonancias magnéticas. 
 
-De cualquier forma, mientras nosotros (los humanos) vemos una representación gráfica, los dispositivos que capturan la imagen la almacenan como una gran matriz de dos dimensiones, formada por valores numéricos que representan cada uno de los puntos que se encuentran en ella. Dichos elementos son llamados *Picture Elements*, *Image Elements*, o simplemente *Pixels*.
+De cualquier forma, mientras nosotros (los humanos) vemos una representación gráfica, los dispositivos que capturan la imagen la almacenan como una gran matriz de dos dimensiones, formada por valores numéricos que representan cada uno de los puntos que se encuentran en ella. Los elementos que conforman la matriz son llamados *Picture Elements*, *Image Elements*, o simplemente *Pixels*.
 
 
-![image alt ><](https://docs.opencv.org/master/MatBasicImageForComputer.jpg#center)
+![><](https://docs.opencv.org/master/MatBasicImageForComputer.jpg#center)
 
 Por ejemplo, en la imagen de arriba, se puede ver que el espejo del auto no es más que una matriz que contiene el nivel de intensidad de cada pixel. 
 

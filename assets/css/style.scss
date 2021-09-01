@@ -1,22 +1,18 @@
 @import "{{ site.theme }}";
 
-body{
-    text-align: justify;
-  }
-
-img[alt$="><"] {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: auto;
-    float: none!important;
-  }
-
-
-
 header {
 
-display: none;
+    display: none;
+    
+    };
 
-};
+.page__content {
+    text-align: justify;
+
+}
+
+
+
+
+
 
