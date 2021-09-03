@@ -56,12 +56,13 @@ Como se mencionó anteriormente, cada uno de ellos contendrá el color o la inte
 <p style='text-align: justify;'>
 En el caso de las imagenes que se encuentran en escala de grices (grayscale), el color final se logra a través de un sólo valor por pixel que indica la información de intensidad, o dicho de otra manera, la cantidad de luz que contiene cada elemento de la imagen. Por lo tanto, los únicos colores que serán visibles son el blanco y el negro, teniendo como opción la combinación de ellos para permitirnos crear distintas tonalidades de gris.
 </p>
-<center>
 
-![><](https://upload.wikimedia.org/wikipedia/commons/f/fa/Grayscale_8bits_palette_sample_image.png)
+<center>
+<img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Grayscale_8bits_palette_sample_image.png"/>
+</center>
 
 *Fuente de la imagen: Ricardo Cancho Niemietz en [Wikipedia](https://en.wikipedia.org/wiki/Grayscale)*
-</center>
+
 
 <p style='text-align: justify;'>
 Por otro lado, para poder obtener imágenes a color, existen diferentes métodos, donde cada uno de ellos divide los pixeles en tres o cuatro componentes básicos. 
@@ -73,7 +74,6 @@ El más popular de los métodos es el <i>RGB</i> dado que esa es la forma en la 
 </p>
 
 <center>
-
 <img src="https://e2eml.school/images/image_processing/three_d_array.png" style="zoom: 35%;"/>
 
 *Fuente de la imagen: [Brandon Rohrer](https://e2eml.school/convert_rgb_to_grayscale.html)*
