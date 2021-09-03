@@ -6,6 +6,7 @@ Autores: [Fabrizio Gilio](https://github.com/Fabriziogilio) y [Camila Vives](htt
 
 <p style='text-align: justify;'> 
 OpenCV (Open Source Computer Vision Library) es una librería de código abierto multiplataforma, construida con el objetivo de proveer una infraestructura común para aplicaciones de visión artificial, y para acelerar el uso de machine perception en productos comerciales. 
+</p>
 
 ### Historia
 
@@ -29,9 +30,11 @@ OpenCV (Open Source Computer Vision Library) es una librería de código abierto
 
 <p style='text-align: justify;'>
 Antes de comenzar a hablar de procesamiento de imágenes, debemos saber exactamente qué es una imagen digital. Existen múltiples formas de obtener imágenes digitales: sacando una foto con un smartphone, creándola con alguna herramienta de software, escaneándola, o bien, a través de procesos más complejos como lo pueden ser las tomografías computadas o las resonancias magnéticas. 
+</p>
 
 <p style='text-align: justify;'>
 De cualquier forma, mientras nosotros (los humanos) vemos una representación gráfica, los dispositivos que capturan la imagen la almacenan como una gran matriz de dos dimensiones, formada por valores numéricos que representan cada uno de los puntos que se encuentran en ella. Los elementos que conforman la matriz son llamados <i>Picture Elements</i>, <i>Image Elements</i>, o simplemente <i>Pixels</i>.
+</p>
 
 <center>
 
@@ -42,15 +45,17 @@ De cualquier forma, mientras nosotros (los humanos) vemos una representación gr
 
 <p style='text-align: justify;'>
 A modo de ejemplo, en la imagen de arriba se puede ver que el espejo del auto no es más que una matriz que contiene el nivel de intensidad de cada pixel. 
+</p>
 
 ### Almacenamiento de Pixels
 <p style='text-align: justify;'>
 La forma de almacenar los pixels varía según las necesidades del problema que se quiera resolver. 
 Como se mencionó anteriormente, cada uno de ellos contendrá el color o la intensidad de color de la imagen. 
+</p>
 
 <p style='text-align: justify;'>
 En el caso de las imagenes que se encuentran en escala de grices (grayscale), el color final se logra a través de un sólo valor por pixel que indica la información de intensidad, o dicho de otra manera, la cantidad de luz que contiene cada elemento de la imagen. Por lo tanto, los únicos colores que serán visibles son el blanco y el negro, teniendo como opción la combinación de ellos para permitirnos crear distintas tonalidades de gris.
-
+</p>
 <center>
 
 ![><](https://upload.wikimedia.org/wikipedia/commons/f/fa/Grayscale_8bits_palette_sample_image.png)
@@ -61,9 +66,11 @@ En el caso de las imagenes que se encuentran en escala de grices (grayscale), el
 <p style='text-align: justify;'>
 Por otro lado, para poder obtener imágenes a color, existen diferentes métodos, donde cada uno de ellos divide los pixeles en tres o cuatro componentes básicos. 
 De esta forma, para representar al color que contendrá cada pixel, en lugar de contar con una sóla matriz bidimensional, se tiene una colección de tres o cuatro matrices bidimensionales las cuales a su vez contienen valores numéricos que indican la intensidad.
+</p>
 
 <p style='text-align: justify;'>
 El más popular de los métodos es el <i>RGB</i> dado que esa es la forma en la que nuestros ojos construyen los colores. En este caso particular, los componentes básicos son rojo, verde y azul y en ocaciones se agrega un cuarto elemento que es la transparencia. 
+</p>
 
 <center>
 
@@ -74,6 +81,7 @@ El más popular de los métodos es el <i>RGB</i> dado que esa es la forma en la 
 
 <p style='text-align: justify;'>
 Cada una de las matrices que representan a los elementos rojo, verde y azul se llaman canales. Si la imagen RGB es de 24 bits (estándar actual), cada canal tiene 8 bits. Esto quiere decir que la imagen final está compuesta de tres imágenes, una por cada canal, donde cada sub-imagen puede almacenar pixeles discretos con una intensidad medida con valores numéricos en el rango de 0 y 255. 
+</p>
 
 
 ## Ejemplos 
