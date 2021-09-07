@@ -39,7 +39,8 @@ De cualquier forma, mientras nosotros (los humanos) vemos una representación gr
 
 <center>
 <img src="https://docs.opencv.org/master/MatBasicImageForComputer.jpg"/>
-
+</center>
+<center>
 Fuente:
 <a href="https://docs.opencv.org/master/d6/d6d/tutorial_mat_the_basic_image_container.html">OpenCV</a>
 </center>
@@ -60,12 +61,10 @@ En el caso de las imagenes que se encuentran en escala de grices (<i>grayscale</
 
 <center>
 <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Grayscale_8bits_palette_sample_image.png"/>
-
+</center>
+<center>
 <a href="https://commons.wikimedia.org/wiki/File:Grayscale_8bits_palette_sample_image.png">Ricardo Cancho Niemietz</a>, Public domain, via Wikimedia Commons
 </center>
-
-
-
 
 <p style='text-align: justify;'>
 Por otro lado, para poder obtener imágenes a color, existen diferentes métodos, donde cada uno de ellos divide los pixeles en tres o cuatro componentes básicos. 
@@ -80,7 +79,8 @@ El más popular de los métodos es el <i>RGB</i> dado que esa es la forma en la 
 
 <center>
 <img src="https://e2eml.school/images/image_processing/three_d_array.png" style="zoom: 35%;"/>
-
+</center>
+<center>
 Fuente:
 <a href="https://e2eml.school/convert_rgb_to_grayscale.html">e2eml.school</a>
 </center>
@@ -92,7 +92,8 @@ Cada una de las matrices que representan a los elementos rojo, verde y azul se l
 
 <center>
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Beyoglu_4671_tricolor.png/800px-Beyoglu_4671_tricolor.png" style="zoom: 50%;"/>
-
+</center>
+<center>
 <a href="https://commons.wikimedia.org/wiki/File:Beyoglu_4671_tricolor.png">© Nevit Dilmen</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons
 </center>
 
@@ -112,8 +113,10 @@ El espacio de colores HSL fue inventado en 1938 por Georges Valensi, un ingenier
 <center>
 <img src="https://i.insider.com/604bba8910c8760018b92fcc?width=700&format=jpeg&auto=webp" style="zoom: 45%;"/>
 
-<img src="https://i.insider.com/604bba6bfea127001886a814?width=700&format=jpeg&auto=webpg" style="zoom: 41.5%;"/>
 
+<img src="https://i.insider.com/604bba6bfea127001886a814?width=700&format=jpeg&auto=webpg" style="zoom: 41.5%;"/>
+</center>
+<center>
 Marvel Studios/Disney Plus
 </center>
 
@@ -137,7 +140,8 @@ A diferencia del modelo RGB que es cúbico, los modelos HSV y HLS son cilíndric
 <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/HSV_color_solid_cylinder_saturation_gray.png" style="zoom: 13%;"/>
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/HSL_color_solid_cylinder_saturation_gray.png" style="zoom: 13%;"/>
-
+</center>
+<center>
 <a href="https://commons.wikimedia.org/wiki/File:RGB_Cube_Show_lowgamma_cutout_b.png">SharkD</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons
 </center>
 
