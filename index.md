@@ -39,9 +39,10 @@ De cualquier forma, mientras nosotros (los humanos) vemos una representación gr
 
 <center>
 <img src="https://docs.opencv.org/master/MatBasicImageForComputer.jpg"/>
-</center>
 
-*Fuente de la imagen: [OpenCV](https://docs.opencv.org/master/d6/d6d/tutorial_mat_the_basic_image_container.html)*
+Fuente:
+<a href="https://docs.opencv.org/master/d6/d6d/tutorial_mat_the_basic_image_container.html">OpenCV</a>
+</center>
 
 <p style='text-align: justify;'>
 A modo de ejemplo, en la imagen de arriba se puede ver que el espejo del auto no es más que una matriz que contiene el nivel de intensidad de cada pixel. 
@@ -59,9 +60,11 @@ En el caso de las imagenes que se encuentran en escala de grices (<i>grayscale</
 
 <center>
 <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Grayscale_8bits_palette_sample_image.png"/>
+
+<a href="https://commons.wikimedia.org/wiki/File:Grayscale_8bits_palette_sample_image.png">Ricardo Cancho Niemietz</a>, Public domain, via Wikimedia Commons
 </center>
 
-*Fuente de la imagen: Ricardo Cancho Niemietz en [Wikipedia](https://en.wikipedia.org/wiki/Grayscale)*
+
 
 
 <p style='text-align: justify;'>
@@ -77,9 +80,11 @@ El más popular de los métodos es el <i>RGB</i> dado que esa es la forma en la 
 
 <center>
 <img src="https://e2eml.school/images/image_processing/three_d_array.png" style="zoom: 35%;"/>
+
+Fuente:
+<a href="https://e2eml.school/convert_rgb_to_grayscale.html">e2eml.school</a>
 </center>
 
-*Fuente de la imagen: Brandon Rohrer en [e2eml.school](https://e2eml.school/convert_rgb_to_grayscale.html)*
 
 <p style='text-align: justify;'>
 Cada una de las matrices que representan a los elementos rojo, verde y azul se llaman canales. Si la imagen RGB es de 24 bits (estándar actual), cada canal tiene 8 bits. Esto quiere decir que la imagen final está compuesta de tres imágenes, una por cada canal, donde cada sub-imagen puede almacenar pixeles discretos con una intensidad medida con valores numéricos en el rango de 0 y 255. 
@@ -87,20 +92,58 @@ Cada una de las matrices que representan a los elementos rojo, verde y azul se l
 
 <center>
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Beyoglu_4671_tricolor.png/800px-Beyoglu_4671_tricolor.png" style="zoom: 50%;"/>
-</center>
 
-*Fuente de la imagen: Nevit Dilmen en [Wikipedia](https://e2eml.school/convert_rgb_to_grayscale.html)*
+<a href="https://commons.wikimedia.org/wiki/File:Beyoglu_4671_tricolor.png">© Nevit Dilmen</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons
+</center>
 
 <p style='text-align: justify;'>
 Esto quiere decir que partiendo de las tres imágenes en escala de grices de los canales, se puede construir una imagen a color. Por ejemplo, en la figura superior, la columna de la derecha muestra los canales aislados en escalas de grices, mientras que en la columna de la izquierda se encuentran su equivalencia en colores naturales. Por último se muestra la combinación de dichas sub-imagenes.
 </p>
 
 <p style='text-align: justify;'>
-Algo que es importante mencionar es que la operación inversa también es posible: a partir de la imagen a color, se pueden obtener las imágenes en escala de grices de cada uno de los canales. Si se manejan los canales tanto separados como en conjunto con diferentes técnicas, se consiguen distintos resultados de efectos artisticos, los cuales son comunmente llamados <i>filtros</i>. 
+Algo que es importante mencionar es que la operación inversa también es posible: a partir de la imagen a color, se pueden obtener las imágenes en escala de grices de cada uno de los canales. Si se manejan los canales (tanto separados como en conjunto) con diferentes técnicas, se consiguen distintos resultados de efectos artisticos, los cuales son comunmente llamados <i>filtros</i>. 
 </p>
 
-#### HSV y HLS
+#### HLS y HSV 
+<p style='text-align: justify;'>
+El espacio de colores HSL fue inventado en 1938 por Georges Valensi, un ingeniero de telecomunicaciones francés, que lo que buscaba era un método para añadir color a la forma existente de codificación monocrómica utilizada para transmitir video, dado que sólo tenían la componente de luminancia. Con esto, la cadena de televisión emisora podía enviar imágenes a color y los receptores que aún contaban con dispositivos monocromáticos podían recibir "colores" traducidos en blanco y negro, sin modificar las señales transmitidas. 
+</p>
 
+<center>
+<img src="https://i.insider.com/604bba8910c8760018b92fcc?width=700&format=jpeg&auto=webp" style="zoom: 45%;"/>
+
+<img src="https://i.insider.com/604bba6bfea127001886a814?width=700&format=jpeg&auto=webpg" style="zoom: 41.5%;"/>
+
+Marvel Studios/Disney Plus
+</center>
+
+
+<p style='text-align: justify;'>
+Ahora, volviendo a lo digital, a pesar de que la mayoría de los dispositivos producen colores con la combinación RGB, la relación entre la cantidad de rojo, verde y azul y el color resultante no es intuitiva. Por este motivo, se intentó buscar una forma de representar el color que tenga que ver con la manera en la que los artistas lo creaban, es decir a través de distintas tinturas y sombras. 
+Este tipo de representación del color, llamada HSV, fue creada en los años 70 por el ingeniero norteamericano Alvy Ray Smith, el cual fue uno de los fundadores de PIXAR y de la división de computación en Lucasfilm. Para poder construirlo tomó como base al modelo HSL mencionado anteriormente, y de ahí vienen las similitudes entre ambos.
+</p>
+
+<p style='text-align: justify;'>
+A diferencia del modelo RGB que es cúbico, los modelos HSV y HLS son cilíndricos. Al ser de esta forma, los colores se definen a través de dimensiones angulares, teniendo en el eje vertical los colores neutros, acromáticos o grices. Tanto la representacion HLS como la HSV incluyen tres canales:
+</p>
+
+- <u>Hue (Matiz o Tono)</u>, que representa a los colores digitales primarios (rojo, verde, azul) con todos los matices intermedios (naranjas, amarillos, violetas, entre otros).
+- <u>Saturation (Saturación)</u>, que indica la "cantidad de color". Esto quiere decir que el valor mínimo de saturación para cualquier color es el gris, mientras que el máximo es el más "puro" o "intenso".
+-  <u>Value (Valor) en HLS o Lightness (Luminosidad) en HSV</u>, que mide la cantidad de luz. Cualquier color al aumentar su cantidad de luz tiende al blanco y al disminuirla, tiende al negro. 
+
+<center>
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/05/RGB_Cube_Show_lowgamma_cutout_a.png" style="zoom: 13%;"/>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/33/HSV_color_solid_cylinder_saturation_gray.png" style="zoom: 13%;"/>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/HSL_color_solid_cylinder_saturation_gray.png" style="zoom: 13%;"/>
+
+<a href="https://commons.wikimedia.org/wiki/File:RGB_Cube_Show_lowgamma_cutout_b.png">SharkD</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons
+</center>
+
+<p style='text-align: justify;'>
+Como puede verse en la figura, la principal diferencia entre HSV y HSL es que en HSL la saturación va del color puro al gris medio y en HSV la saturación va del color puro al blanco. En consecuencia, el tono en HSL va desde el negro al blanco y en HSV va desde el negro al color intenso.
+</p>
 
 ## Ejemplos 
 ### Ejemplo 1 - ¿Dónde está Wally?
@@ -120,4 +163,5 @@ Algo que es importante mencionar es que la operación inversa también es posibl
 - How to Convert an RGB Image to Grayscale: <https://e2eml.school/convert_rgb_to_grayscale.html>
 - Channel (digital image): <https://en.wikipedia.org/wiki/Channel_(digital_image)>
 - HSL and HSV: <https://en.wikipedia.org/wiki/HSL_and_HSV>
-
+- Antonio Herrera - Modelos de Color: <https://ahenav.com/2014/04/09/modelos-de-color/>
+- Descripción del modelo de color HSL: <http://guiadigital.uam.es/SCUAM/documentacion/pdfs_a_descargar/color.pdf>
