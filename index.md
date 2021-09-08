@@ -31,13 +31,13 @@ La forma más simple de instalar la librería OpenCV en Windows es a través de 
 El proceso es entonces el siguiente:
 
 <ol>
-<li> En primer lugar, comprobamos que la versión de Python es mayor a 3.6.X (Septiembre de 2021) con `python -V` o `python --version`</li>
+<li> En primer lugar, comprobamos que la versión de Python es mayor a 3.6.X (Septiembre de 2021) con <code>python -V </code> o <code>python --version</code></li>
 
 <center>
 <img src="images\Picture1.png"/>
 </center>
 
-<li>(Opcional) Creamos un entorno virtual con `python -m env [nombre_entorno]` y lo activamos con `[nombre_entorno]\Scripts\activate.bat`
+<li>(Opcional) Creamos un entorno virtual con <code>python -m env [nombre_entorno]</code> y lo activamos con <code>[nombre_entorno]\Scripts\activate.bat</code>
 
 Esto sirve para que no colisionen las dependencias de paquetes y las versiones y además para ver qué otros paquetes instala OpenCV </li>
 
@@ -51,7 +51,7 @@ Esto sirve para que no colisionen las dependencias de paquetes y las versiones y
 <img src="images\Picture3.png"/>
 </center>
 
-<li>Instalamos OpenCV con el comando `pip install opencv-python`. OpenCV requiere de la librería numpy, por eso la va a instalar automáticamente</li>
+<li>Instalamos OpenCV con el comando <code>pip install opencv-python</code>. OpenCV requiere de la librería numpy, por eso la va a instalar automáticamente</li>
 
 <center>
 <img src="images\Picture4.png"/>
@@ -63,13 +63,13 @@ Esto sirve para que no colisionen las dependencias de paquetes y las versiones y
 <img src="images\Picture5.png" style="zoom: 85%;"/>
 </center>
 
-<li>Comprobamos que se haya instalado correctamente: iniciamos la consola de python con el comando `python`, importamos OpenCV con `import cv2 as cv` e imprimimos la versión con `print(cv.__version__)`</li>
+<li>Comprobamos que se haya instalado correctamente: iniciamos la consola de python con el comando <code>python</code>, importamos OpenCV con <code>import cv2 as cv</code> e imprimimos la versión con <code>print(cv.__version__)</code></li>
 
 <center>
 <img src="images\Picture6.png" style="zoom: 85%;"/>
 </center>
 
-<li> (Recomendado) Instalar la librería matplotlib a través de `pip install matplotlib`. Este paso no es obligatorio, pero muchas de las funciones que se usan en OpenCV se pueden simplificar usando funciones de esa librería </li>
+<li> (Recomendado) Instalar la librería matplotlib a través de <code>pip install matplotlib</code>. Este paso no es obligatorio, pero muchas de las funciones que se usan en OpenCV se pueden simplificar usando funciones de esa librería </li>
 </ol>
 
 ### Ubuntu
