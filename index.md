@@ -60,16 +60,17 @@ Esto sirve para que no colisionen las dependencias de paquetes y las versiones y
 <li>Verificamos los nuevos paquetes instalados, utilizando nuevamente `pip list`</li>
 
 <center>
-<img src="images\Picture5.png" style="zoom: 85%";/>
+<img src="images\Picture5.png" style="zoom: 85%;"/>
 </center>
 
 <li>Comprobamos que se haya instalado correctamente: iniciamos la consola de python con el comando `python`, importamos OpenCV con `import cv2 as cv` e imprimimos la versión con `print(cv.__version__)`</li>
 
 <center>
-<img src="images\Picture6.png" style="zoom: 85%";/>
+<img src="images\Picture6.png" style="zoom: 85%;"/>
 </center>
 
 <li> (Recomendado) Instalar la librería matplotlib a través de `pip install matplotlib`. Este paso no es obligatorio, pero muchas de las funciones que se usan en OpenCV se pueden simplificar usando funciones de esa librería </li>
+</ol>
 
 ### Ubuntu
 De la misma forma que en Windows, OpenCV puede ser instalado en Ubuntu a partir de paquetes pre-compilados.  
