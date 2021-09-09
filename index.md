@@ -5,7 +5,15 @@ Autores: [Fabrizio Gilio](https://github.com/Fabriziogilio) y [Camila Vives](htt
 ## ¿Qué es OpenCV?
 
 <p style='text-align: justify;'> 
-OpenCV (Open Source Computer Vision Library) es una librería de código abierto multiplataforma, construida con el objetivo de proveer una infraestructura común para aplicaciones de visión artificial, y para acelerar el uso de machine perception en productos comerciales. 
+OpenCV (Open Source Computer Vision Library) es una librería de código abierto multiplataforma, construida con el objetivo de proveer una infraestructura común para aplicaciones de <i>visión artificial</i>, y para acelerar el uso de <i>machine perception</i> en productos comerciales. 
+</p>
+
+<p style='text-align: justify;'>
+La visión artificial (también conocida como computer vision), se trata de una disciplina que provee métodos para adquirir, procesar, analizar y comprender imágenes del mundo real. De esta manera, la visión artificial intenta reproducir en las computadoras la forma en la que los humanos vemos el mundo que nos rodea. 
+</p>
+
+<p style='text-align: justify;'>
+El machine perception es entonces, la capacidad de un sistema de computación de interpretar los datos que se obtienen a través de computer vision, computer audition, machine touch o machine olfaction. El objetivo final de este campo es que la interpretación sea similar a la forma en la que los humanos usan sus sentidos para ver el mundo que los rodea.
 </p>
 
 ### Historia
@@ -238,6 +246,7 @@ Como puede verse en la figura, la principal diferencia entre HSV y HSL es que en
 
 ## Referencias
 - OpenCV - About: <https://opencv.org/about/>
+- Introduction to OpenCV: <https://docs.opencv.org/master/da/df6/tutorial_py_table_of_contents_setup.html>
 - Mat - The Basic Image Container: <https://docs.opencv.org/master/d6/d6d/tutorial_mat_the_basic_image_container.html>
 - How do digital images work?: <https://www.bbc.co.uk/bitesize/topics/zf2f9j6/articles/z2tgr82>
 - Grayscale: <https://en.wikipedia.org/wiki/Grayscale>
