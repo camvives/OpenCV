@@ -2,8 +2,7 @@
 # Introducción a OpenCV con Python
 Autores: [Fabrizio Gilio](https://github.com/Fabriziogilio) y [Camila Vives](https://github.com/camvives)
 
-- [Introducción a OpenCV con Python](#introducción-a-opencv-con-python)
-  * [¿Qué es OpenCV?](#Qué-es-OpenCV)
+  * [¿Qué es OpenCV?](#qué-es-opencv)
     + [Historia](#historia)
     + [Usos de OpenCV](#usos-de-opencv)
     + [Links de utilidad](#links-de-utilidad)
@@ -17,7 +16,7 @@ Autores: [Fabrizio Gilio](https://github.com/Fabriziogilio) y [Camila Vives](htt
       - [RGB](#rgb)
       - [HLS y HSV](#hls-y-hsv)
   * [Ejemplos](#ejemplos)
-    + [Ejemplo 1 - ¿Dónde está Wally?](#ejemplo-1----dónde-está-wally-)
+    + [Ejemplo 1 - ¿Dónde está Wally?](#ejemplo-1---dónde-está-wally)
       - [Código](#código)
     + [Ejemplo 2 - Filtros en Cámara Web](#ejemplo-2---filtros-en-cámara-web)
       - [Código](#código-1)
