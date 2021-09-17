@@ -315,7 +315,7 @@ El siguiente paso será aplicar filtros que provee OpenCV a tres de las cuatro p
 <ol>
 <li><u>Desenfoque gaussiano:</u> es un efecto de suavizado, en donde se mezclan ligeramente los colores de los pixels, lo que provoca que la imagen pierda detalle y se vea menos nítida.</li>
 <li><u>Filtro Laplaciano:</u> este filtro destaca las regiones de la imagen que tienen un rápido cambio en sus pixels, lo cual se da generalmente en los bordes de los objetos que se encuentran en la imagen.</li>
-<li><u>Cambio de BGR a RGB:</u> como se vió anteriormente, las imágenes pueden descomponerse en sus canales básicos. OpenCV almacena los pixels de video en formato BGR, es decir que las matrices de azul y rojo se encuentran invertidas. Con este filtro, podremos ver que al convertir la imagen a RGB, el objeto que en este caso es rojo, se verá azul y lo mismo ocurrirá con los tonos intermedios de estos dos colores. 
+<li><u>Cambio de BGR a RGB:</u> como se vió anteriormente, las imágenes pueden descomponerse en sus canales básicos. OpenCV almacena los pixels de video en formato BGR, es decir que las matrices de azul y rojo se encuentran invertidas. Con este filtro, podremos ver que al convertir la imagen a RGB, el objeto que en este caso es rojo, se verá azul y lo mismo ocurrirá con los tonos intermedios de estos dos colores. </li>
 </ol>
 
 <center>
