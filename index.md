@@ -1,7 +1,31 @@
 
 # Introducción a OpenCV con Python
 Autores: [Fabrizio Gilio](https://github.com/Fabriziogilio) y [Camila Vives](https://github.com/camvives)
- 
+
+- [Introducción a OpenCV con Python](#introducci-n-a-opencv-con-python)
+  * [¿Qué es OpenCV?](#-qu--es-opencv-)
+    + [Historia](#historia)
+    + [Usos de OpenCV](#usos-de-opencv)
+    + [Links de utilidad](#links-de-utilidad)
+  * [Proceso de instalación](#proceso-de-instalaci-n)
+    + [Windows](#windows)
+    + [Ubuntu](#ubuntu)
+    + [Fedora](#fedora)
+  * [Procesamiento de imágenes](#procesamiento-de-im-genes)
+    + [¿Qué es una imagen digital?](#-qu--es-una-imagen-digital-)
+    + [Almacenamiento de Pixels](#almacenamiento-de-pixels)
+      - [RGB](#rgb)
+      - [HLS y HSV](#hls-y-hsv)
+  * [Ejemplos](#ejemplos)
+    + [Ejemplo 1 - ¿Dónde está Wally?](#ejemplo-1----d-nde-est--wally-)
+      - [Código](#c-digo)
+    + [Ejemplo 2 - Filtros en Cámara Web](#ejemplo-2---filtros-en-c-mara-web)
+      - [Código](#c-digo-1)
+  * [Recursos Adicionales](#recursos-adicionales)
+  * [Referencias](#referencias)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 ## ¿Qué es OpenCV?
 
 <p style='text-align: justify;'> 
@@ -243,10 +267,11 @@ Como puede verse en la figura, la principal diferencia entre HSV y HSL es que en
 
 <center>
 <img src="https://upload.wikimedia.org/wikipedia/en/e/ec/MartinHandfordWally%26Friends.PNG" style="zoom: 85%;"/>
-
-By <a rel="nofollow" class="external free" href="http://waldo.wikia.com">http://waldo.wikia.com</a>, <a href="//en.wikipedia.org/wiki/File:MartinHandfordWally%26Friends.PNG" title="Fair use of copyrighted material in the context of Where's Wally?">Fair use</a>, <a href="https://en.wikipedia.org/w/index.php?curid=23173518">Link</a>
 </center>
 
+<center>
+By <a rel="nofollow" class="external free" href="http://waldo.wikia.com">http://waldo.wikia.com</a>, <a href="//en.wikipedia.org/wiki/File:MartinHandfordWally%26Friends.PNG" title="Fair use of copyrighted material in the context of Where's Wally?">Fair use</a>, <a href="https://en.wikipedia.org/w/index.php?curid=23173518">Link</a>
+</center>
 
 <p style='text-align: justify;'>
 En este ejemplo intentaremos que el programa escrito en Python con OpenCV, encuentre a Wally en una ilustración completa, teniendo previamente un recorte de lo que debe encontrar. Para esto vamos a proveer al programa con dos imágenes, una del escenario completo, a la cual se le llama <i>Source image</i> (I): 
@@ -281,10 +306,30 @@ En nuestro ejemplo, una vez que encuentre una comparación satisfactoria, marcar
 <script src="https://gist.github.com/camvives/63d6a2373a687176d82131e2e7c6d8f0.js"></script>
 
 ### Ejemplo 2 - Filtros en Cámara Web
+<p style='text-align: justify;'>
+En este segundo ejemplo haremos uso de la cámara web, y aplicaremos distintos filtros a la imagen que se está capturando a tiempo real. Para que puedan verse todos los filtros a la vez crearemos una ventana dividida en cuatro porciones en las que se reproduzca la misma imagen.
+</p>
+
+<p style='text-align: justify;'>
+El siguiente paso será aplicar filtros que provee OpenCV a tres de las cuatro porciones de la ventana, manteniendo en una la imagen original. En este caso aplicaremos los siguientes filtros:
+</p>
+<ol>
+<li><u>Desenfoque gaussiano:</u> es un efecto de suavizado, en donde se mezclan ligeramente los colores de los pixels, lo que provoca que la imagen pierda detalle y se vea menos nítida.</li>
+<li><u>Filtro Laplaciano:</u> este filtro destaca las regiones de la imagen que tienen un rápido cambio en sus pixels, lo cual se da generalmente en los bordes de los objetos que se encuentran en la imagen.</li>
+<li><u>Cambio de BGR a RGB:</u> como se vió anteriormente, las imágenes pueden descomponerse en sus canales básicos. OpenCV almacena los pixels de video en formato BGR, es decir que las matrices de azul y rojo se encuentran invertidas. Con este filtro, podremos ver que al convertir la imagen a RGB, el objeto que en este caso es rojo, se verá azul y lo mismo ocurrirá con los tonos intermedios de estos dos colores. 
+</ol>
+
+<center>
+<img src="images\Deadpool.png" style="zoom: 50%;"/>
+</center>
+
+#### Código 
 <script src="https://gist.github.com/camvives/b9cda75cbd3b855771c7be2c65a356af.js"></script>
 
 ## Recursos Adicionales
 - Canal de Youtube  de  Murtaza's Workshop - Robotics and AI: <https://www.youtube.com/c/MurtazasWorkshopRoboticsandAI>
+- Blog de OMES: <https://omes-va.com/>
+- Curso oficial OpenCV con Python: <https://opencv.org/course-opencv-python/>
 
 ## Referencias
 - OpenCV - About: <https://opencv.org/about/>
@@ -300,3 +345,5 @@ En nuestro ejemplo, una vez que encuentre una comparación satisfactoria, marcar
 - Antonio Herrera - Modelos de Color: <https://ahenav.com/2014/04/09/modelos-de-color/>
 - Descripción del modelo de color HSL: <http://guiadigital.uam.es/SCUAM/documentacion/pdfs_a_descargar/color.pdf>
 - Template Matching: <https://docs.opencv.org/3.4/de/da9/tutorial_template_matching.html>
+- Desenfoque Gaussiano: <https://es.wikipedia.org/wiki/Desenfoque_gaussiano>
+- Laplacian Filter: <https://www.sciencedirect.com/topics/engineering/laplacian-filter>
