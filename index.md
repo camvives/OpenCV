@@ -1,7 +1,7 @@
 
 # Introducción a OpenCV con Python
 Autores: [Fabrizio Gilio](https://github.com/Fabriziogilio) y [Camila Vives](https://github.com/camvives)
-
+ 
 ## ¿Qué es OpenCV?
 
 <p style='text-align: justify;'> 
@@ -236,6 +236,48 @@ Como puede verse en la figura, la principal diferencia entre HSV y HSL es que en
 
 ## Ejemplos 
 ### Ejemplo 1 - ¿Dónde está Wally?
+
+<p style='text-align: justify;'>  ¿Dónde está Wally? es una serie de libros para niños creada por el ilustrador inglés Martin Handford. El juego que presentan los libros se basa en encontrar al personaje Wally, que está oculto dentro de una multitud de ilustraciones que representan a cientos de personas, objetos y animales haciendo cosas divertidas. 
+</p>
+
+
+<center>
+<img src="https://upload.wikimedia.org/wikipedia/en/e/ec/MartinHandfordWally%26Friends.PNG" style="zoom: 85%;"/>
+
+By <a rel="nofollow" class="external free" href="http://waldo.wikia.com">http://waldo.wikia.com</a>, <a href="//en.wikipedia.org/wiki/File:MartinHandfordWally%26Friends.PNG" title="Fair use of copyrighted material in the context of Where's Wally?">Fair use</a>, <a href="https://en.wikipedia.org/w/index.php?curid=23173518">Link</a>
+</center>
+
+
+<p style='text-align: justify;'>
+En este ejemplo intentaremos que el programa escrito en Python con OpenCV, encuentre a Wally en una ilustración completa, teniendo previamente un recorte de lo que debe encontrar. Para esto vamos a proveer al programa con dos imágenes, una del escenario completo, a la cual se le llama <i>Source image</i> (I): 
+</p>
+
+<center>
+<img src="images\where-is-wally.jpg" style="zoom: 7%;"/>
+</center>
+<center>
+<a href="https://imgur.com/user/WhereWasWaldo">WhereWasWaldo</a> via Imgur
+</center>
+
+y otra del recorte de Wally en el escenario, la cual es llamada <i>Template image</i> (T):
+<center>
+<img src="images\Wally.jpg" style="zoom: 50%;"/>
+</center>
+
+<p style='text-align: justify;'>
+Para identificar la zona en las que ambas imágenes coinciden, OpenCV compara la imagen T contra la imagen I desplazándola. Es decir, la matriz de números de la imagen plantilla se compara pixel por pixel con la imagen fuente, y a través de una métrica se calcula que tan "buena" o "mala" es la comparación. 
+</p>
+
+<p style='text-align: justify;'>
+En nuestro ejemplo, una vez que encuentre una comparación satisfactoria, marcará la zona en la que se encuentra Wally con un rectángulo.
+</p>
+
+<center>
+<img src="images\wally_found.jpg" style="zoom: 50%;"/>
+</center>
+
+#### Código 
+
 <script src="https://gist.github.com/camvives/63d6a2373a687176d82131e2e7c6d8f0.js"></script>
 
 ### Ejemplo 2 - Filtros en Cámara Web
@@ -246,6 +288,8 @@ Como puede verse en la figura, la principal diferencia entre HSV y HSL es que en
 
 ## Referencias
 - OpenCV - About: <https://opencv.org/about/>
+- Computer vision: <https://en.wikipedia.org/wiki/Computer_vision>
+- Machine perception: <https://en.wikipedia.org/wiki/Machine_perception>
 - Introduction to OpenCV: <https://docs.opencv.org/master/da/df6/tutorial_py_table_of_contents_setup.html>
 - Mat - The Basic Image Container: <https://docs.opencv.org/master/d6/d6d/tutorial_mat_the_basic_image_container.html>
 - How do digital images work?: <https://www.bbc.co.uk/bitesize/topics/zf2f9j6/articles/z2tgr82>
@@ -255,3 +299,4 @@ Como puede verse en la figura, la principal diferencia entre HSV y HSL es que en
 - HSL and HSV: <https://en.wikipedia.org/wiki/HSL_and_HSV>
 - Antonio Herrera - Modelos de Color: <https://ahenav.com/2014/04/09/modelos-de-color/>
 - Descripción del modelo de color HSL: <http://guiadigital.uam.es/SCUAM/documentacion/pdfs_a_descargar/color.pdf>
+- Template Matching: <https://docs.opencv.org/3.4/de/da9/tutorial_template_matching.html>
