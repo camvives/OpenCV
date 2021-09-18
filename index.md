@@ -264,14 +264,6 @@ Como puede verse en la figura, la principal diferencia entre HSV y HSL es que en
 </p>
 
 
-<center>
-<img src="https://upload.wikimedia.org/wikipedia/en/e/ec/MartinHandfordWally%26Friends.PNG" style="zoom: 85%;"/>
-</center>
-
-<center>
-By <a rel="nofollow" class="external free" href="http://waldo.wikia.com">http://waldo.wikia.com</a>, <a href="//en.wikipedia.org/wiki/File:MartinHandfordWally%26Friends.PNG" title="Fair use of copyrighted material in the context of Where's Wally?">Fair use</a>, <a href="https://en.wikipedia.org/w/index.php?curid=23173518">Link</a>
-</center>
-
 <p style='text-align: justify;'>
 En este ejemplo intentaremos que el programa escrito en Python con OpenCV, encuentre a Wally en una ilustración completa, teniendo previamente un recorte de lo que debe encontrar. Para esto vamos a proveer al programa con dos imágenes, una del escenario completo, a la cual se le llama <i>Source image</i> (I): 
 </p>
