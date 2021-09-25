@@ -100,7 +100,7 @@ En el trabajo publicado, se explica que las tomografías y resonancias magnétic
 </center>
 <center>
 Adrian Rosebrock en 
-<a href=https://www.pyimagesearch.com/2018/06/18/face-recognition-with-opencv-python-and-deep-learning>pyimagesearch</a>
+<a href="https://www.pyimagesearch.com/2018/06/18/face-recognition-with-opencv-python-and-deep-learning">pyimagesearch</a>
 </center>
 
 <p style='text-align: justify;'>A modo de ejemplo, en los aeropuertos de China existen puestos de “ayuda” (al día de hoy incluso algunos son robots que circulan por el establecimiento), que a partir del reconocimiento del rostro de la persona, permite informarle cuál es su vuelo, el horario y la puerta de abordaje. Además, en otros países como Estados Unidos o España también se utiliza el reconocimiento facial para hacer el check-in. </p>
