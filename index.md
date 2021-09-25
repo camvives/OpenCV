@@ -69,8 +69,24 @@ Las tomografías y resonancias magnéticas producen una imagen completa del cere
 #### Reconocimiento facial
 <p style='text-align: justify;'>Por último, pero quizás de lo más interesante, OpenCV nos permite hacer uso del reconocimiento facial. Es decir, no sólo se reconoce que hay una persona en la imagen, sino que podemos decir quién es esa persona.Esto tiene una amplia variedad de usos, entre los cuales se pueden nombrar el permitir acceso o no a ciertos lugares, la toma de asistencia en ámbitos académicos o empresariales, o el inicio sesión en alguna cuenta de un dispositivo, entre otras. </p>
 
-A modo de ejemplo, en los aeropuertos de China existen puestos de “ayuda” (que al día de hoy algunos son robots que circulan por el aeropuerto), y a partir del reconocimiento del rostro de la persona, permite informarle cuál es su vuelo, el horario o la puerta de abordaje.
-En otros países como EEUU, y España también se utiliza el reconocimiento facial para hacer el check-in 
+<center>
+<img src="https://www.pyimagesearch.com/wp-content/uploads/2018/06/face_recognition_opencv_example_02.jpg" style="zoom: 70%;"/>
+</center>
+<center>
+ Adrian Rosebrock en
+<a href=https://www.pyimagesearch.com/2018/06/18/face-recognition-with-opencv-python-and-deep-learning>pyimagesearch</a>
+</center>
+
+<p>A modo de ejemplo, en los aeropuertos de China existen puestos de “ayuda” (al día de hoy incluso algunos son robots que circulan por el establecimiento), que a partir del reconocimiento del rostro de la persona, permite informarle cuál es su vuelo, el horario y la puerta de abordaje.Además, en otros países como Estados Unidos o España también se utiliza el reconocimiento facial para hacer el check-in. </p>
+
+<center>
+<img src="https://globalnews.ca/wp-content/uploads/2018/10/19695244.jpg?w=2048" style="zoom: 17%;"/>
+</center>
+<center>
+Fuente:
+<a href="https://globalnews.ca/news/4567183/facial-recognition-technology-u-s-airports/">Global News</a>
+</center>
+
 
 ## Proceso de instalación
 ### Windows
