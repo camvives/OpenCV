@@ -3,9 +3,8 @@
 Autores: [Fabrizio Gilio](https://github.com/Fabriziogilio) y [Camila Vives](https://github.com/camvives)
 
   * [¿Qué es OpenCV?](#qué-es-opencv)
-    + [Historia](#historia)
-    + [Usos de OpenCV](#usos-de-opencv)
     + [Links de utilidad](#links-de-utilidad)
+    + [Usos de OpenCV](#usos-de-opencv)
   * [Proceso de instalación](#proceso-de-instalación)
     + [Windows](#windows)
     + [Ubuntu](#ubuntu)
@@ -39,10 +38,6 @@ La visión artificial (también conocida como computer vision), se trata de una 
 El machine perception es entonces, la capacidad de un sistema de computación de interpretar los datos que se obtienen a través de computer vision, computer audition, machine touch o machine olfaction. El objetivo final de este campo es que la interpretación sea similar a la forma en la que los humanos usan sus sentidos para ver el mundo que los rodea.
 </p>
 
-### Historia
-
-### Usos de OpenCV
-
 ### Links de utilidad
 - Página principal: <https://opencv.org>
 
@@ -53,6 +48,29 @@ El machine perception es entonces, la capacidad de un sistema de computación de
 - Foro Q&A: <https://forum.opencv.org>
 
 - Repositorio con funcionalidades extra: <https://github.com/opencv/opencv_contrib>
+
+
+### Usos de OpenCV
+<p style='text-align: justify;'>La visión artificial se puede utilizar para un sinfin de aplicaciones que pueden tanto mejorar la eficiencia de las personas en sus trabajos, como crear nuevas formas de observar situaciones y crear rápidas mediciones que puedan ayudar a resolver problemas.  A continuación se nombrarán algunos ejemplos de proyectos en los que se utiliza OpenCV como base para lograr los objetivos de visión artificial. </p>
+
+#### Deportes
+
+
+#### Medicina
+<p style='text-align: justify;'>En el área de Medicina, se puede utilizar la funcionalidad de detección de objetos, formas y colores para analizar casos más complejos.
+En un Paper del “World Journal of Engineering Research and Technology” WJERT. India; se realizó un estudio del uso de OPENCV para la ayuda en la detección de la posición y área de tumores cerebrales.
+</p>
+Las tomografías y resonancias magnéticas producen una imagen completa del cerebro. Esta imagen es analizada visualmente por el médico para la detección y el diagnóstico de un tumor cerebral, sin embargo, este método tiene un resultado menos preciso en la detección y el tamaño del tumor. Este documento se basa en un método asistido por computadora que utiliza un CV abierto y un sistema integrado para la detección de tejido tumoral cerebral con precisión en comparación con otras detecciones. Este método para la detección del rango y la forma del tumor en la imagen de tomografías cerebrales, reduce el tiempo de análisis para la detección del tumor.
+
+#### Tráfico
+
+#### Tráfico de peatones
+
+#### Reconocimiento facial
+<p style='text-align: justify;'>Por último, pero quizás de lo más interesante, OpenCV nos permite hacer uso del reconocimiento facial. Es decir, no sólo se reconoce que hay una persona en la imagen, sino que podemos decir quién es esa persona.Esto tiene una amplia variedad de usos, entre los cuales se pueden nombrar el permitir acceso o no a ciertos lugares, la toma de asistencia en ámbitos académicos o empresariales, o el inicio sesión en alguna cuenta de un dispositivo, entre otras. </p>
+
+A modo de ejemplo, en los aeropuertos de China existen puestos de “ayuda” (que al día de hoy algunos son robots que circulan por el aeropuerto), y a partir del reconocimiento del rostro de la persona, permite informarle cuál es su vuelo, el horario o la puerta de abordaje.
+En otros países como EEUU, y España también se utiliza el reconocimiento facial para hacer el check-in 
 
 ## Proceso de instalación
 ### Windows
@@ -164,7 +182,7 @@ Como se mencionó anteriormente, cada uno de ellos contendrá el color o la inte
 </p>
 
 <p style='text-align: justify;'>
-En el caso de las imagenes que se encuentran en escala de grices (<i>grayscale</i>), el color final se logra a través de un sólo valor por pixel que indica la información de intensidad, o dicho de otra manera, la cantidad de luz que contiene cada elemento de la imagen. Por lo tanto, los únicos colores que serán visibles son el blanco y el negro, teniendo como opción la combinación de ellos para permitirnos crear distintas tonalidades de gris.
+En el caso de las imagenes que se encuentran en escala de grises (<i>grayscale</i>), el color final se logra a través de un sólo valor por pixel que indica la información de intensidad, o dicho de otra manera, la cantidad de luz que contiene cada elemento de la imagen. Por lo tanto, los únicos colores que serán visibles son el blanco y el negro, teniendo como opción la combinación de ellos para permitirnos crear distintas tonalidades de gris.
 </p>
 
 <center>
@@ -175,14 +193,14 @@ En el caso de las imagenes que se encuentran en escala de grices (<i>grayscale</
 </center>
 
 <p style='text-align: justify;'>
-Por otro lado, para poder obtener imágenes a color, existen diferentes métodos, donde cada uno de ellos divide los pixeles en tres o cuatro componentes básicos. 
-De esta forma, para representar al color que contendrá cada pixel, en lugar de contar con una sóla matriz bidimensional, se tiene una colección de tres o cuatro matrices bidimensionales las cuales a su vez contienen valores numéricos que indican la intensidad.
+Por otro lado, para poder obtener imágenes a color, existen diferentes métodos, donde cada uno de ellos divide los pixels en tres o cuatro componentes básicos. 
+De esta forma, para representar al color que contendrá cada pixel, en lugar de contar con una sola matriz bidimensional, se tiene una colección de tres o cuatro matrices bidimensionales las cuales a su vez contienen valores numéricos que indican la intensidad.
 </p>
 
 #### RGB
 
 <p style='text-align: justify;'>
-El más popular de los métodos es el <i>RGB</i> dado que esa es la forma en la que nuestros ojos construyen los colores. En este caso particular, los componentes básicos son rojo, verde y azul y en ocaciones se agrega un cuarto elemento (alpha) que es la transparencia. 
+El más popular de los métodos es el <i>RGB</i> dado que esa es la forma en la que nuestros ojos construyen los colores. En este caso particular, los componentes básicos son rojo, verde y azul y en ocasiones se agrega un cuarto elemento (alpha) que es la transparencia. 
 </p>
 
 <center>
@@ -195,7 +213,7 @@ Fuente:
 
 
 <p style='text-align: justify;'>
-Cada una de las matrices que representan a los elementos rojo, verde y azul se llaman canales. Si la imagen RGB es de 24 bits (estándar actual), cada canal tiene 8 bits. Esto quiere decir que la imagen final está compuesta de tres imágenes, una por cada canal, donde cada sub-imagen puede almacenar pixeles discretos con una intensidad medida con valores numéricos en el rango de 0 y 255. 
+Cada una de las matrices que representan a los elementos rojo, verde y azul se llaman canales. Si la imagen RGB es de 24 bits (estándar actual), cada canal tiene 8 bits. Esto quiere decir que la imagen final está compuesta de tres imágenes, una por cada canal, donde cada sub-imagen puede almacenar pixels discretos con una intensidad medida con valores numéricos en el rango de 0 y 255. 
 </p>
 
 <center>
@@ -206,11 +224,11 @@ Cada una de las matrices que representan a los elementos rojo, verde y azul se l
 </center>
 
 <p style='text-align: justify;'>
-Esto quiere decir que partiendo de las tres imágenes en escala de grices de los canales, se puede construir una imagen a color. Por ejemplo, en la figura superior, la columna de la derecha muestra los canales aislados en escalas de grices, mientras que en la columna de la izquierda se encuentran su equivalencia en colores naturales. Por último se muestra la combinación de dichas sub-imagenes.
+Esto quiere decir que partiendo de las tres imágenes en escala de grises de los canales, se puede construir una imagen a color. Por ejemplo, en la figura superior, la columna de la derecha muestra los canales aislados en escalas de grises, mientras que en la columna de la izquierda se encuentran su equivalencia en colores naturales. Por último se muestra la combinación de dichas sub-imagenes.
 </p>
 
 <p style='text-align: justify;'>
-Algo que es importante mencionar es que la operación inversa también es posible: a partir de la imagen a color, se pueden obtener las imágenes en escala de grices de cada uno de los canales. Si se manejan los canales (tanto separados como en conjunto) con diferentes técnicas, se consiguen distintos resultados de efectos artisticos, los cuales son comunmente llamados <i>filtros</i>. 
+Algo que es importante mencionar es que la operación inversa también es posible: a partir de la imagen a color, se pueden obtener las imágenes en escala de grises de cada uno de los canales. Si se manejan los canales (tanto separados como en conjunto) con diferentes técnicas, se consiguen distintos resultados de efectos artisticos, los cuales son comunmente llamados <i>filtros</i>. 
 </p>
 
 #### HLS y HSV 
@@ -235,7 +253,7 @@ Este tipo de representación del color, llamada HSV, fue creada en los años 70 
 </p>
 
 <p style='text-align: justify;'>
-A diferencia del modelo RGB que es cúbico, los modelos HSV y HLS son cilíndricos. Al ser de esta forma, los colores se definen a través de dimensiones angulares, teniendo en el eje vertical los colores neutros, acromáticos o grices. Tanto la representacion HLS como la HSV incluyen tres canales:
+A diferencia del modelo RGB que es cúbico, los modelos HSV y HLS son cilíndricos. Al ser de esta forma, los colores se definen a través de dimensiones angulares, teniendo en el eje vertical los colores neutros, acromáticos o grises. Tanto la representacion HLS como la HSV incluyen tres canales:
 </p>
 
 - <u>Hue (Matiz o Tono)</u>, que representa a los colores digitales primarios (rojo, verde, azul) con todos los matices intermedios (naranjas, amarillos, violetas, entre otros).
@@ -326,6 +344,8 @@ El siguiente paso será aplicar filtros que provee OpenCV a tres de las cuatro p
 - OpenCV - About: <https://opencv.org/about/>
 - Computer vision: <https://en.wikipedia.org/wiki/Computer_vision>
 - Machine perception: <https://en.wikipedia.org/wiki/Machine_perception>
+- Open Source Sports Video Analysis using Machine Learning: <https://dev.to/stephan007/open-source-sports-video-analysis-using-maching-learning-2ag4>
+
 - Introduction to OpenCV: <https://docs.opencv.org/master/da/df6/tutorial_py_table_of_contents_setup.html>
 - Mat - The Basic Image Container: <https://docs.opencv.org/master/d6/d6d/tutorial_mat_the_basic_image_container.html>
 - How do digital images work?: <https://www.bbc.co.uk/bitesize/topics/zf2f9j6/articles/z2tgr82>
