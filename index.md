@@ -98,7 +98,7 @@ En el trabajo publicado, se explica que las tomografías y resonancias magnétic
 <p style='text-align: justify;'> En cuanto al tránsito de vehículos, una de las aplicaciones de OpenCV se basa en el control del flujo de tránsito. Es decir, detectar la cantidad de autos que se encuentran circulando y clasificarlos según distintas características como tipo, dirección en la que circulan, color o modelo para luego tomar decisiones sobre esa información. Además el mismo sistema de detección podría utilizarse para calcular la velocidad a la que transitan, de forma que se puedan descubrir infracciones o casos en los que haya vehículos detenidos en medio de la calle. Agregado a esto, si existieran infracciones, OpenCV podría utilizarse también para reconocer la patente y registrarla.</p>
 
 <center>
-<img src="https://visionintelligence.ai/images/Traffic-Signal-Violation.jpg" style="zoom: 70%;"/>
+<img src="https://visionintelligence.ai/images/Traffic-Signal-Violation.jpg" style="zoom: 50%;"/>
 </center>
 <center>
 Fuente 
