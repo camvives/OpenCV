@@ -82,7 +82,7 @@ Por ejemplo, en un <a href='https://www.semanticscholar.org/paper/Boundary-Detec
 <center>
 Ghule, Pournima, "Content-Based Image Retreival for Detecting Brain Tumors and Amyloid Fluid Presence"
 (2014). 
-<a href=https://scholarworks.gvsu.edu/cistechlib/194>Technical Library. 194. </a>
+<a href="https://scholarworks.gvsu.edu/cistechlib/194">Technical Library. 194. </a>
 </center>
 
 <p style='text-align: justify; padding-top:1em;'>
