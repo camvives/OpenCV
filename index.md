@@ -5,6 +5,10 @@ Autores: [Fabrizio Gilio](https://github.com/Fabriziogilio) y [Camila Vives](htt
   * [¿Qué es OpenCV?](#qué-es-opencv)
     + [Links de utilidad](#links-de-utilidad)
     + [Usos de OpenCV](#usos-de-opencv)
+      - [Deportes](#deportes)
+      - [Medicina](#medicina)
+      - [Tráfico](#trafico)
+      - [Reconocimiento facial](#reconocimiento-facial)
   * [Proceso de instalación](#proceso-de-instalación)
     + [Windows](#windows)
     + [Ubuntu](#ubuntu)
@@ -89,11 +93,29 @@ Ghule, Pournima, "Content-Based Image Retreival for Detecting Brain Tumors and A
 En el trabajo publicado, se explica que las tomografías y resonancias magnéticas producen una imagen completa del cerebro, que por lo  general, es analizada visualmente por el médico. Sin embargo, este método tiene un resultado menos preciso en la detección y el tamaño del tumor. Al utilizar en un método asistido por computadora y un sistema integrado para la detección de tejido tumoral cerebral, aumenta la precisión en comparación con otras detecciones. Además se tiene la ventaja de que se reduce el tiempo de análisis para la detección del tumor. </p>
 
 #### Tráfico
+<p style='text-align: justify;'>La visión artificial puede ser muy útil tanto para el tráfico vehicular como el tráfico peatonal. Tal como en las aplicaciones anteriores, su utilidad se basa especialmente en la obtención de métricas que permitan sacar conclusiones estadísticas. </p>
 
-#### Tráfico de peatones
+<p style='text-align: justify;'> En cuanto al tránsito de vehículos, una de las aplicaciones de OpenCV se basa en el control del flujo de tránsito. Es decir, detectar la cantidad de autos que se encuentran circulando y clasificarlos según distintas características como tipo, dirección en la que circulan, color o modelo para luego tomar decisiones sobre esa información. Además el mismo sistema de detección podría utilizarse para calcular la velocidad a la que transitan, de forma que se puedan descubrir infracciones o casos en los que haya vehículos detenidos en medio de la calle. Agregado a esto, si existieran infracciones, OpenCV podría utilizarse también para reconocer la patente y registrarla.</p>
+
+<center>
+<img src="https://visionintelligence.ai/images/Traffic-Signal-Violation.jpg" style="zoom: 70%;"/>
+</center>
+<center>
+Fuente 
+<a href="https://visionintelligence.ai/">VisionIntelligence.ai</a>
+</center>
+
+<p style='text-align: justify;'>
+Al igual que con el tránsito vehicular, se puede hacer un análisis del flujo del tráfico de peatones. En un proyecto desarrollado por la empresa Placemeter, se utilizaba visión artificial para rastrear el movimiento de las calles de Nueva York, de forma que los locales de venta pudieran tener estadísticas de cuántos peatones pasaban por delante de sus tiendas e incluso cuántos ingresaban a ellas.</p>
+
+<center>
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/69091237?h=03257e6f48" width="640" height="360" frameborder="0"></iframe>
+</center>
+
 
 #### Reconocimiento facial
 <p style='text-align: justify;'>Por último, pero quizás de lo más interesante, OpenCV nos permite hacer uso del reconocimiento facial. Es decir, no sólo se reconoce que hay una persona en la imagen, sino que podemos decir quién es esa persona.Esto tiene una amplia variedad de usos, entre los cuales se pueden nombrar el permitir acceso o no a ciertos lugares, la toma de asistencia en ámbitos académicos o empresariales, o el inicio sesión en alguna cuenta de un dispositivo, entre otras. </p>
+
 
 <center>
 <img src="https://www.pyimagesearch.com/wp-content/uploads/2018/06/face_recognition_opencv_example_02.jpg" style="zoom: 70%;"/>
@@ -387,7 +409,8 @@ El siguiente paso será aplicar filtros que provee OpenCV a tres de las cuatro p
 - Computer vision: <https://en.wikipedia.org/wiki/Computer_vision>
 - Machine perception: <https://en.wikipedia.org/wiki/Machine_perception>
 - Open Source Sports Video Analysis using Machine Learning: <https://dev.to/stephan007/open-source-sports-video-analysis-using-maching-learning-2ag4>
-- Raj, E.T. & Kumaresan, M.. (2016). Boundary detection algorithm for brain tumor position and area detection using OPENCV. 11. 5326-5331. 
+- Raj, E.T. & Kumaresan, M.. (2016). Boundary detection algorithm for brain tumor position and area detection using OPENCV. 11.: <https://www.semanticscholar.org/paper/Boundary-Detection-Algorithm-For-Brain-Tumor-And-Raj-Kumaresan/5a5ddad9d3c99bc1a986e69838ae0ffa9d9c3d17>
+- Road Traffic Counting App detection with OpenCV: <https://www.fellow-consulting.com/road-traffic-counting-app-detection-with-opencv/>
 - Introduction to OpenCV: <https://docs.opencv.org/master/da/df6/tutorial_py_table_of_contents_setup.html>
 - Mat - The Basic Image Container: <https://docs.opencv.org/master/d6/d6d/tutorial_mat_the_basic_image_container.html>
 - How do digital images work?: <https://www.bbc.co.uk/bitesize/topics/zf2f9j6/articles/z2tgr82>
