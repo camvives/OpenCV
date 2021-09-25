@@ -109,7 +109,7 @@ Fuente
 Al igual que con el tránsito vehicular, se puede hacer un análisis del flujo del tráfico de peatones. En un proyecto desarrollado por la empresa Placemeter, se utilizaba visión artificial para rastrear el movimiento de las calles de Nueva York, de forma que los locales de venta pudieran tener estadísticas de cuántos peatones pasaban por delante de sus tiendas e incluso cuántos ingresaban a ellas.</p>
 
 <center>
-<iframe title="vimeo-player" src="https://player.vimeo.com/video/69091237?h=03257e6f48" width="640" height="360" frameborder="0"></iframe>
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/69091237?h=03257e6f48" frameborder="0"></iframe>
 </center>
 
 
