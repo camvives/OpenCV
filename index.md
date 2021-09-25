@@ -51,10 +51,16 @@ El machine perception es entonces, la capacidad de un sistema de computación de
 
 
 ### Usos de OpenCV
-<p style='text-align: justify;'>La visión artificial se puede utilizar para un sinfin de aplicaciones que pueden tanto mejorar la eficiencia de las personas en sus trabajos, como crear nuevas formas de observar situaciones y crear rápidas mediciones que puedan ayudar a resolver problemas.  A continuación se nombrarán algunos ejemplos de proyectos en los que se utiliza OpenCV como base para lograr los objetivos de visión artificial. </p>
+<p style='text-align: justify;'>La visión artificial se puede utilizar para un sinfin de aplicaciones que pueden tanto mejorar la eficiencia de las personas en sus trabajos, como crear nuevas formas de observar situaciones y crear rápidas mediciones que puedan ayudar a resolver problemas. A continuación se nombrarán algunos ejemplos de proyectos en los que se utiliza OpenCV como base para lograr los objetivos de visión artificial. </p>
 
 #### Deportes
-<p style='text-align: justify;'> La idea de realizar un seguimiento de los deportistas dentro del campo de juego suele ser muy útil para obtener especificaciones de su rendimiento, ya sea individualmente o en equipo. </p>
+<p style='text-align: justify;'> La idea de realizar un seguimiento de los deportistas dentro del campo de juego suele ser muy útil para obtener especificaciones de su rendimiento, ya sea individualmente o en equipo.  Con el uso de OpenCV se pueden pensar varios objetivos de visión artificial a lograr, entre ellos:
+</p>
+
+- El seguimiento de los jugadores por equipo, para evaluar por ejemplo, el nivel de esfuerzo físico, la velocidad de reacción, la cantidad de pases, etc. 
+- La representación de la cancha en tiempo real, lo cual permite crear estrategias de juego, de acuerdo a la posición de los jugadores y sus rivales. 
+- La detección de acciones de juego etiquetando cada movimiento, de forma que se puedan obtener estadísticas de cantidad de tiros, tiros sin aciertos o pases dados, entre otras medidas.
+- El Análisis del movimiento corporal, que es útil para deportes en los cuales existen riesgos de sufrir lesiones por un movimiento mal realizado. 
 
 <center>
 <img src='https://blogs.nvidia.com/wp-content/uploads/2017/07/StanfordAI-768x432.png' style="zoom: 70%;"/>
@@ -64,17 +70,6 @@ Fuente:
 <a href='https://blogs.nvidia.com/blog/2017/07/23/future-of-computer-vision/'> blogs.nvidia.com </a>
 </center>
 
-
-<p style='text-align: justify;'> Con el uso de OpenCV se pueden pensar varios objetivos de visión artificial a lograr, entre ellos:
-</p>
-
-- El seguimiento de los jugadores por equipo, para evaluar por ejemplo, el nivel de esfuerzo físico, la velocidad de reacción, la cantidad de pases, etc. 
-- La representación de la cancha en tiempo real, lo cual permite crear estrategias de juego, de acuerdo a la posición de los jugadores y sus rivales. 
-- La detección de acciones de juego etiquetando cada movimiento, de forma que se puedan obtener estadísticas de cantidad de tiros, tiros sin aciertos o pases dados, entre otras medidas.
-- El Análisis del movimiento corporal, que es útil para deportes en los cuales existen riesgos de sufrir lesiones por un movimiento mal realizado. 
-
-
-
 #### Medicina
 <p style='text-align: justify;'>
 En el área de Medicina, la visión artificial se puede utilizar a través de la funcionalidad de detección de objetos, formas y colores, para analizar casos médicos que conlleven cierta complejidad.
@@ -82,7 +77,7 @@ Por ejemplo, en un <a href='https://www.semanticscholar.org/paper/Boundary-Detec
 </p>
 
 <center>
-<img src=images\brain_tumor.png style="zoom: 70%;"/>
+<img src="images\brain_tumor.png" style="zoom: 70%;"/>
 </center>
 <center>
 Ghule, Pournima, "Content-Based Image Retreival for Detecting Brain Tumors and Amyloid Fluid Presence"
