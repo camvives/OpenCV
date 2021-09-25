@@ -54,13 +54,44 @@ El machine perception es entonces, la capacidad de un sistema de computación de
 <p style='text-align: justify;'>La visión artificial se puede utilizar para un sinfin de aplicaciones que pueden tanto mejorar la eficiencia de las personas en sus trabajos, como crear nuevas formas de observar situaciones y crear rápidas mediciones que puedan ayudar a resolver problemas.  A continuación se nombrarán algunos ejemplos de proyectos en los que se utiliza OpenCV como base para lograr los objetivos de visión artificial. </p>
 
 #### Deportes
+<p style='text-align: justify;'> La idea de realizar un seguimiento de los deportistas dentro del campo de juego suele ser muy útil para obtener especificaciones de su rendimiento, ya sea individualmente o en equipo. </p>
+
+<center>
+<img src='https://blogs.nvidia.com/wp-content/uploads/2017/07/StanfordAI-768x432.png' style="zoom: 70%;"/>
+</center>
+<center>
+Fuente: 
+<a href='https://blogs.nvidia.com/blog/2017/07/23/future-of-computer-vision/'> blogs.nvidia.com </a>
+</center>
+
+
+<p style='text-align: justify;'> Con el uso de OpenCV se pueden pensar varios objetivos de visión artificial a lograr, entre ellos:
+</p>
+
+- El seguimiento de los jugadores por equipo, para evaluar por ejemplo, el nivel de esfuerzo físico, la velocidad de reacción, la cantidad de pases, etc. 
+- La representación de la cancha en tiempo real, lo cual permite crear estrategias de juego, de acuerdo a la posición de los jugadores y sus rivales. 
+- La detección de acciones de juego etiquetando cada movimiento, de forma que se puedan obtener estadísticas de cantidad de tiros, tiros sin aciertos o pases dados, entre otras medidas.
+- El Análisis del movimiento corporal, que es útil para deportes en los cuales existen riesgos de sufrir lesiones por un movimiento mal realizado. 
+
 
 
 #### Medicina
-<p style='text-align: justify;'>En el área de Medicina, se puede utilizar la funcionalidad de detección de objetos, formas y colores para analizar casos más complejos.
-En un Paper del “World Journal of Engineering Research and Technology” WJERT. India; se realizó un estudio del uso de OPENCV para la ayuda en la detección de la posición y área de tumores cerebrales.
+<p style='text-align: justify;'>
+En el área de Medicina, la visión artificial se puede utilizar a través de la funcionalidad de detección de objetos, formas y colores, para analizar casos médicos que conlleven cierta complejidad.
+Por ejemplo, en un <a href='https://www.semanticscholar.org/paper/Boundary-Detection-Algorithm-For-Brain-Tumor-And-Raj-Kumaresan/5a5ddad9d3c99bc1a986e69838ae0ffa9d9c3d17'> Paper publicado por World Journal of Engineering Research and Technology India</a>, se realizó un estudio del uso de OpenCV para la ayuda en la detección de la posición y área de tumores cerebrales.
 </p>
-Las tomografías y resonancias magnéticas producen una imagen completa del cerebro. Esta imagen es analizada visualmente por el médico para la detección y el diagnóstico de un tumor cerebral, sin embargo, este método tiene un resultado menos preciso en la detección y el tamaño del tumor. Este documento se basa en un método asistido por computadora que utiliza un CV abierto y un sistema integrado para la detección de tejido tumoral cerebral con precisión en comparación con otras detecciones. Este método para la detección del rango y la forma del tumor en la imagen de tomografías cerebrales, reduce el tiempo de análisis para la detección del tumor.
+
+<center>
+<img src=images\brain_tumor.png style="zoom: 70%;"/>
+</center>
+<center>
+Ghule, Pournima, "Content-Based Image Retreival for Detecting Brain Tumors and Amyloid Fluid Presence"
+(2014). 
+<a href=https://scholarworks.gvsu.edu/cistechlib/194>Technical Library. 194. </a>
+</center>
+
+<p style='text-align: justify; padding-top:1em;'>
+En el trabajo publicado, se explica que las tomografías y resonancias magnéticas producen una imagen completa del cerebro, que por lo  general, es analizada visualmente por el médico. Sin embargo, este método tiene un resultado menos preciso en la detección y el tamaño del tumor. Al utilizar en un método asistido por computadora y un sistema integrado para la detección de tejido tumoral cerebral, aumenta la precisión en comparación con otras detecciones. Además se tiene la ventaja de que se reduce el tiempo de análisis para la detección del tumor. </p>
 
 #### Tráfico
 
@@ -73,11 +104,11 @@ Las tomografías y resonancias magnéticas producen una imagen completa del cere
 <img src="https://www.pyimagesearch.com/wp-content/uploads/2018/06/face_recognition_opencv_example_02.jpg" style="zoom: 70%;"/>
 </center>
 <center>
- Adrian Rosebrock en
+Adrian Rosebrock en 
 <a href=https://www.pyimagesearch.com/2018/06/18/face-recognition-with-opencv-python-and-deep-learning>pyimagesearch</a>
 </center>
 
-<p>A modo de ejemplo, en los aeropuertos de China existen puestos de “ayuda” (al día de hoy incluso algunos son robots que circulan por el establecimiento), que a partir del reconocimiento del rostro de la persona, permite informarle cuál es su vuelo, el horario y la puerta de abordaje.Además, en otros países como Estados Unidos o España también se utiliza el reconocimiento facial para hacer el check-in. </p>
+<p style='text-align: justify;'>A modo de ejemplo, en los aeropuertos de China existen puestos de “ayuda” (al día de hoy incluso algunos son robots que circulan por el establecimiento), que a partir del reconocimiento del rostro de la persona, permite informarle cuál es su vuelo, el horario y la puerta de abordaje. Además, en otros países como Estados Unidos o España también se utiliza el reconocimiento facial para hacer el check-in. </p>
 
 <center>
 <img src="https://globalnews.ca/wp-content/uploads/2018/10/19695244.jpg?w=2048" style="zoom: 17%;"/>
@@ -361,7 +392,7 @@ El siguiente paso será aplicar filtros que provee OpenCV a tres de las cuatro p
 - Computer vision: <https://en.wikipedia.org/wiki/Computer_vision>
 - Machine perception: <https://en.wikipedia.org/wiki/Machine_perception>
 - Open Source Sports Video Analysis using Machine Learning: <https://dev.to/stephan007/open-source-sports-video-analysis-using-maching-learning-2ag4>
-
+- Raj, E.T. & Kumaresan, M.. (2016). Boundary detection algorithm for brain tumor position and area detection using OPENCV. 11. 5326-5331. 
 - Introduction to OpenCV: <https://docs.opencv.org/master/da/df6/tutorial_py_table_of_contents_setup.html>
 - Mat - The Basic Image Container: <https://docs.opencv.org/master/d6/d6d/tutorial_mat_the_basic_image_container.html>
 - How do digital images work?: <https://www.bbc.co.uk/bitesize/topics/zf2f9j6/articles/z2tgr82>
