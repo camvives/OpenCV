@@ -55,7 +55,7 @@ El machine perception es entonces, la capacidad de un sistema de computación de
 
 
 ### Usos de OpenCV
-<p style='text-align: justify;'>La visión artificial se puede utilizar para un sinfin de aplicaciones que pueden tanto mejorar la eficiencia de las personas en sus trabajos, como crear nuevas formas de observar situaciones y crear rápidas mediciones que puedan ayudar a resolver problemas. A continuación se nombrarán algunos ejemplos de proyectos en los que se utiliza OpenCV como base para lograr los objetivos de visión artificial. </p>
+<p style='text-align: justify;'>La visión artificial se puede utilizar para un sinfin de aplicaciones que pueden tanto mejorar la eficiencia de las personas en sus trabajos, como crear nuevas formas de observar situaciones y obtener rápidas mediciones que puedan ayudar a resolver problemas. A continuación se nombrarán algunos ejemplos de proyectos en los que se utiliza OpenCV como base para lograr los objetivos de visión artificial. </p>
 
 #### Deportes
 <p style='text-align: justify;'> La idea de realizar un seguimiento de los deportistas dentro del campo de juego suele ser muy útil para obtener especificaciones de su rendimiento, ya sea individualmente o en equipo.  Con el uso de OpenCV se pueden pensar varios objetivos de visión artificial a lograr, entre ellos:
