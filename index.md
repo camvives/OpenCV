@@ -150,7 +150,7 @@ El proceso es entonces el siguiente:
 <img src="images\Picture1.png"/>
 </center>
 
-<li style="padding-top:1em; padding-bottom:0.5em">(Opcional) Creamos un entorno virtual con <code>python -m env [nombre_entorno]</code> y lo activamos con <code>[nombre_entorno]\Scripts\activate.bat</code>
+<li style="padding-top:1em; padding-bottom:0.5em">(Opcional) Creamos un entorno virtual con <code>python -m venv [nombre_entorno]</code> y lo activamos con <code>[nombre_entorno]\Scripts\activate.bat</code>
 
 Esto sirve para que no colisionen las dependencias de paquetes y las versiones y además para ver qué otros paquetes instala OpenCV </li>
 
