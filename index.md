@@ -336,7 +336,7 @@ A diferencia del modelo RGB que es cúbico, los modelos HSV y HLS son cilíndric
 </center>
 
 <p style='text-align: justify;'>
-Como puede verse en la figura, la principal diferencia entre HSV y HSL es que en HSL la saturación va del color puro al gris medio y en HSV la saturación va del color puro al blanco. En consecuencia, el tono en HSL va desde el negro al blanco y en HSV va desde el negro al color intenso.
+Como puede verse en la figura, la principal diferencia entre HSV y HSL es que en HSL la saturación va del color puro al gris medio y en HSV la saturación va del color puro al blanco. Por otra parte, la cantidad de luz en HSL va desde el negro al blanco y en HSV va desde el negro al color intenso, el cual representa al color si se lo ilumina con una luz blanca.
 </p>
 
 ## Ejemplos 
