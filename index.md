@@ -1,5 +1,4 @@
 
-# Introducción a OpenCV con Python
 Autores: [Fabrizio Gilio](https://github.com/Fabriziogilio) y [Camila Vives](https://github.com/camvives)
 
   * [¿Qué es OpenCV?](#qué-es-opencv)
